@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  /*background-color: black;*/
+ background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+/*background-image: linear-gradient(270deg,#1b1429,#140f23);*/
+   display: grid;
+   min-height: 100vh;
+   grid-template-rows: auto 1fr auto ;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.logo{
+    border-radius: 50%;
+    width: 100px;
+    cursor: pointer;
+    margin-left: -100px;
+    position: fixed;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;    
+    font-family: 'Roboto', sans-serif;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ff2301;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #ff2301;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before{
+    width: 100%;
+}
+
+/*falta acomodar la transicion del slider y mucho mas*/
+.slider{
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    padding-bottom: 25px;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+/*h1{
+    color: white;
+    width: auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-size: 1.5rem;
+}*/
+
+img{
+    max-width: 100%;
+}
+
+.containerItems{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding-left: 50px; 
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+.item{
+    border-radius: 15px;
+}
+.item :hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.info{
+    padding: 15px 30px 15px 30px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    align-items: center;
+   /* background-color: wheat;*/
+}
+
+h2{
+    font-weight: normal;
+}
+    
+.item img{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.price{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.info button{
+    background: none;
+  /*background-color: gray;*/
+    padding: 15px 10px;
+    cursor: pointer;
+    border: 2px solid ;
+    border-color: orangered;
+    color: #ff2301;
+}
+
+/*wpp icon*/
+/*.wpp{
+    width: 15%;
+    position: fixed;
+    background-color: aqua;
+}*/
+
+/*footer*/
+.pie{
+    width: 100%;
+    background-color: #ff5a41;
+}
+
+.pie .group-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie .group-1 .box figure{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie .group-1 .box figure img{
+    width: 250px;   
+    border-radius: 50%;
+}
+
+.pie .group-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie .group-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie .group-1 .red a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie .group-1 .red a:hover{
+    color: aqua;
+}
+
+.pie .group-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie .group-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-widht:800px){
+    .pie .group-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+.containerItems2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 300px; 
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+section{
+    padding: 30px; 
+}
+
+
+.cotactContainer{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 30px;
+}
+
+.map-responsive{
+   margin: 20px;
+}
+
+p{
+    font-size: 1rem;
+    color: #efefef;
+    padding: 15px;
+}
