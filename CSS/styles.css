@@ -22,12 +22,12 @@ body{
     justify-content: space-between;   
 }
 
+
 .logo{
     border-radius: 50%;
     width: 100px;
     cursor: pointer;
     margin-left: -100px;
-    position: fixed;
 }
 
 .navbar ul li {
@@ -119,6 +119,31 @@ img{
     align-items: center;
    /* background-color: wheat;*/
 }
+
+@media screen and (max-width:768px){
+.containerItems{
+    grid-template-columns: repeat(3, 1fr);   
+}
+.navbar ul li{
+    flex-direction: column;  
+    justify-content: center;
+}
+.logo{
+    border-radius: 50%;
+    width: 100px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width:400px){
+    .containerItems{
+        grid-template-columns: repeat(1, 3fr);   
+    }
+    }
+      
 
 h2{
     font-weight: normal;
@@ -243,25 +268,47 @@ h2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding-left: 300px; 
+    padding-left: 30px; 
     padding-right: 50px;
     padding-bottom: 50px;
 }
+@media screen and (max-width:768px){
+    .containerItems2{
+        grid-template-columns: repeat(2, 1fr);   
+    }
+    .navbar ul li{
+        flex-direction: column;  
+        justify-content: center;
+    }
+    .logo{
+        border-radius: 50%;
+        width: 100px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    }
+    
+    @media screen and (max-width:400px){
+        .containerItems2{
+            grid-template-columns: repeat(1, 1fr);   
+        }
+        }     
 
 section{
     padding: 30px; 
 }
 
 
-.cotactContainer{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 30px;
+.map{
+   margin: 20px;
+   padding: 0;
+   display: flex;
+   justify-content: center;
 }
 
-.map-responsive{
-   margin: 20px;
-}
+
 
 p{
     font-size: 1rem;
