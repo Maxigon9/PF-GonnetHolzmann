@@ -4,39 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <meta name="description" content="Tienda virtual de articulos informaticos">
+    <meta name="keywords" content="ram, procesadores, tienda, envios, parlantes, articulos informaticos, calidad">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" href="../img/favicon/favicon-32x32.png" type="image/png">
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/3ad99a7ed3.js" crossorigin="anonymous"></script>
-        <title>Sobre nosotros</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <title>Horus Tech Store-Sobre nosotros</title>
 </head>
 <body>
     <header>
-        <div class="navbar">
-             <img src="../img/logofox.webp"  alt="Horus informatica logo" class="logo" >
-            <!--<h1>Horus informatica </h1>-->
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="productos-servicios.html">Productos y servicios</a>
-                </li>
-                <li>
-                    <a href="como-comprar.html">Como comprar</a>
-                </li>
-                <li>
-                    <a href="sobre-nosotros.html">Sobre nosotros</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+        <nav class="navbar navbar-expand-lg bg-body-dark navbar-fixed-top p-0">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"> <img src="../img/logofox.webp" alt="Horus Tech Store"> </a>
+              <button class="navbar-toggler" type="1" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link  " aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="productos-servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="productos-servicios.html">Procesadores</a></li>
+                      <li><a class="dropdown-item" href="#">Ram</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Monitores</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="como-comprar.html">Como comprar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link "  href="sobre-nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
 
-    
+    <div class="sobrenosotros__text">
+        <p>En Horus Tech Store, somos un equipo apasionado de expertos en tecnología que está comprometido en ayudarte a encontrar los mejores productos para satisfacer tus necesidades tecnológicas. Nos enorgullece ofrecer una amplia gama de artículos informáticos de alta calidad, desde laptops y monitores hasta periféricos y accesorios.
+
+          Pero en Horus Tech Store, no somos solo una tienda de tecnología. Nos enorgullece ofrecer un servicio excepcional a nuestros clientes, y creemos que la atención al cliente es igual de importante que ofrecer productos de calidad. Nuestro objetivo es asegurarnos de que cada cliente tenga una experiencia de compra satisfactoria y personalizada, y estamos dispuestos a hacer todo lo posible para lograrlo.
+          
+          Además, en Horus Tech Store, siempre estamos al tanto de las últimas tendencias tecnológicas. Nos aseguramos de estar actualizados con los últimos productos y tecnologías en el mercado para poder brindarte una experiencia de compra actualizada y única.
+          
+          Estamos comprometidos en hacer que tu experiencia de compra sea fácil, accesible y sin estrés. ¡Gracias por visitar Horus Tech Store!</p>
+    </div>
 
     <footer class="pie">
         <div class="group-1">
@@ -48,9 +80,9 @@
                 </figure>
             </div>
             <div class="box">
-                <h2>Lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, id!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, nam.</p>
+              <h2>Horus Tech Store</h2>
+                <p>Zapiola 1310 Bahia Blanca, CP 8000</p>
+                <p>Aceptamos todos los medios de pago</p>
             </div>
             <div class="box">
                 <h2>Seguinos en nuestras redes</h2>
@@ -63,7 +95,7 @@
             </div>
         </div>
         <div class="group-2">
-            <small>& copy; 2023 <b>Horus Informatica</b> - Todos los derechos Reservados.</small>
+            <small>& copy; 2023 <b>Horus Tech Store</b> - Todos los derechos Reservados.</small>
         </div>
     </footer>
 </body>
