@@ -3,10 +3,10 @@
 }
 
 .nav-link{
-    color: $orange-fluo;
+    color: $orange-fluo !important;
 
     &:hover {
-        color: $orange-fluo
+        color: $orange-fluo ;
 
     }
 }
@@ -62,7 +62,8 @@
         .dropdown-menu{
             background-color: black;
            
-            dropdown-item:hover{
-                background-color: black;
-            }
         }
+    
+.dropdown-item:hover{
+    background-color: black !important;
+}

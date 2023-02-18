@@ -16,7 +16,7 @@ body {
   width: 70px; }
 
 .nav-link {
-  color: #ff2301; }
+  color: #ff2301 !important; }
   .nav-link:hover {
     color: #ff2301; }
 
@@ -57,8 +57,9 @@ body {
 
 .dropdown-menu {
   background-color: black; }
-  .dropdown-menu dropdown-item:hover {
-    background-color: black; }
+
+.dropdown-item:hover {
+  background-color: black !important; }
 
 #carouselExampleIndicators {
   margin-top: 5%;
