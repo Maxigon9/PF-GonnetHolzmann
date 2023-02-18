@@ -121,7 +121,11 @@ img{
 }
 .item{
     border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $orange-fluo;
 }
+
 .item :hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }

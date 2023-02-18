@@ -93,7 +93,10 @@ img {
   padding-bottom: 50px; }
 
 .item {
-  border-radius: 15px; }
+  border-radius: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff2301; }
 
 .item :hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
