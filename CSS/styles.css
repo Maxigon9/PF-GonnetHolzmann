@@ -300,8 +300,9 @@ p {
   position: relative;
   top: 100px;
   margin: 0 auto;
-  width: 680px;
+  width: 100%;
   height: 250px;
+  overflow: hidden;
   max-width: 100%; }
 
 .contacto__form {
@@ -311,6 +312,7 @@ p {
 
 .map {
   max-width: 100%;
+  width: 100%;
   margin-top: 190px;
   margin-bottom: 30px;
   display: flex;
