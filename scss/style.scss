@@ -199,10 +199,13 @@ h2{
       .sobrenosotros__text{
         padding-top: 70px;
      } 
- 
     }
     
-         
+    @media screen and (max-width:989px){
+       .d-flex{
+        margin-bottom: 20px;
+       }
+    }
     
     
     @media screen and (max-width:400px){
