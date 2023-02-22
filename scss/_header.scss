@@ -1,13 +1,13 @@
 .navbar-brand{
-    width: 70px;
+    width: 60px;
 }
 
-.nav-link{
-    color: $orange-fluo !important;
+.nav-item{
+
+    color: $orange-fluo;
 
     &:hover {
         color: $orange-fluo ;
-
     }
 }
 
@@ -30,7 +30,7 @@
 
         a{
             text-decoration: none;
-            color:$orange-fluo;
+            color: #ff5a41;
             font-family: sans-serif;
             font-size: 1.2rem;
 
@@ -65,5 +65,227 @@
         }
     
 .dropdown-item:hover{
-    background-color: black !important;
+    background-color: black ;
 }
+
+.cart__icon{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    width: 40px;
+    filter: invert(100%);
+    height: auto;
+    cursor: pointer;
+}
+
+.scroll{
+    background-color: #ff5a41;
+    box-shadow: .1rem .2rem .3rem #333;
+
+    .nav-item a{
+        color: black ;
+    }
+    li::before {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: black;
+        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.5s ease-in-out      
+    }
+
+        li:hover::before{
+            transform: scaleX(1);
+        }
+
+    .cart__icon{
+        filter: invert(15%);
+    }
+
+    .navbar-toggler{
+        color: #333;
+    }
+
+    .dropdown-menu{
+        background-color: #ff5a41;
+
+        .dropdown-item:hover{
+            background-color: transparent;
+        }
+    }
+
+}
+
+.dropdown-toggle{
+    color: #ff5a41 ;
+
+    &:hover{
+        color: #ff5a41;
+    }
+
+}
+
+.diseñoNumero {
+    padding: 10px;
+    background-color: red;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    position: relative;
+    top: -12px;
+
+    left: 30px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCompra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:15px;
+    background-color: rgba(51, 51, 51, 0.6);
+    flex-direction:column;
+    gap:35px;
+}
+
+.informacionCompra{
+    width: 500px;
+    height: 500px;
+    background-color: #ff5a41;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+
+    h2{
+        display: flex;
+        font-weight: 300;
+        margin: 50px 0px 0px 50px;
+        font-size: 32px;
+        width: 100%;
+    }
+}
+
+
+.x{
+    padding-top: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+.productosCompra{
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 450px;
+    height: 30%;
+    overflow-y: auto;
+    margin-top: 0;
+}
+
+.productosCompra > div {
+    margin: 0px 45px;
+    padding: 20px 0px;
+    width: auto;
+    border-bottom: 1px dotted black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productosCompra::-webkit-scrollbar{
+    width: 7px;
+    background-color: #141C29;
+    border-radius: 5px;
+}
+
+.productosCompra::-webkit-scrollbar-thumb{
+    background: white ;
+    border-radius: 3px;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.productosCompra img{
+    width: 25px;
+    height: auto;
+    margin-right:10px;
+    border-bottom: none ;
+    cursor: pointer;
+}
+
+.total{
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 150px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.total span{
+    font-weight: 300;
+}
+
+.contenedorCompra > button{
+    z-index: 1;
+    background-color: #263143;
+    width: 300px;
+    height: 45px;
+    border-radius: 10px ;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.contenedorCompra > button:hover{
+    background-color: white;
+    color: black;
+}
+
+.none>div,
+.none button, 
+.none p,
+.none h2{
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    border: 0px;
+}
+
+.soldOut{
+    background-color: red;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+.botonTrash{
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

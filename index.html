@@ -34,24 +34,24 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-dark navbar-fixed-top p-0">
+        <nav class="navbar navbar-expand-lg bg-body-dark navbar-fixed-top p-0" id="header">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"> <img src="./img/logofox.webp" alt="Logo Horus Tech Store"> </a>
-                <button class="navbar-toggler navbar-dark" type="1" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                <button class="navbar-toggler " type="1" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="">
-                        <li class="nav-item">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" >
+                        <li class="nav-item ">
                             <a class="nav-link  " aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle " href="./pages/productos-servicios.html" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-expanded="false" >
                                 Productos
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" >
                                 <li><a class="dropdown-item" href="./pages/productos-servicios.html">Procesadores</a>
                                 </li>
                                 <li><a class="dropdown-item" href="#">Ram</a></li>
@@ -71,16 +71,19 @@
                             <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <!--<form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </form> -->
+                    <div class="cesta">
+                        <img id="cart__icon" class="cart__icon" src="img/carrito-de-compras.png" alt="carrito compras"></img>
+                        <div id="numero"></div>
+                    </div>
+                </div>
                 </div>
             </div>
         </nav>
     </header>
-
-
 
     <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -114,14 +117,30 @@
         </button>
     </div>
 
-    <div class="containerItems">
+
+    <main>
+        <div id="contenedor" class="contenedor"> </div>
+    </main>
+    
+    <div id="contenedorCompra">
+        <div class="informacionCompra" id="informacionCompra">
+            <h2>Cesta</h2>
+            <p class="x" id="x">x</p>
+        </div>
+
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+        <button>Finalizar Compra</button>
+    </div>
+
+    <div class="containerItems" id="containerItems">
         <div class="item">
             <figure>
                 <img src="./img/products/notebook.png" alt="notebook">
             </figure>
             <div class="info">
                 <h2>Notebook</h2>
-                <h3>$100</h3>
+                <h3 class="price">$100</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -132,7 +151,7 @@
             </figure>
             <div class="info">
                 <h2>Celular</h2>
-                <h3>$50</h3>
+                <h3 class="price">$50</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -143,7 +162,7 @@
             </figure>
             <div class="info">
                 <h2>Cable</h2>
-                <h3>$20</h3>
+                <h3 class="price">$20</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -154,7 +173,7 @@
             </figure>
             <div class="info">
                 <h2>Micro SD</h2>
-                <h3>$25</h3>
+                <h3 class="price">$25</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -165,7 +184,7 @@
             </figure>
             <div class="info">
                 <h2>Monitor</h2>
-                <h3>$30</h3>
+                <h3 class="price">$30</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -176,7 +195,7 @@
             </figure>
             <div class="info">
                 <h2>mouse</h2>
-                <h3>$15</h3>
+                <h3 class="price">$15</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -187,7 +206,7 @@
             </figure>
             <div class="info">
                 <h2>Ram</h2>
-                <h3>$40</h3>
+                <h3 class="price">$40</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -198,7 +217,7 @@
             </figure>
             <div class="info">
                 <h2>Tablet</h2>
-                <h3>$100</h3>
+                <h3 class="price">$100</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -209,7 +228,7 @@
             </figure>
             <div class="info">
                 <h2>Smart TV</h2>
-                <h3>$200</h3>
+                <h3 class="price">$200</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -220,7 +239,7 @@
             </figure>
             <div class="info">
                 <h2>webcam</h2>
-                <h3>$100</h3>
+                <h3 class="price">$100</h3>
                 <button>Agregar al carrito</button>
             </div>
         </div>
@@ -255,8 +274,8 @@
         </div>
     </footer>
 
-    <!--<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
-    <script src="./js/glider.js"></script> -->
+   
+    <script src="./js/app.js"></script> 
 
 </body>
 
