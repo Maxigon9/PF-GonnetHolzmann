@@ -334,7 +334,7 @@ img {
   .containerItems {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 415px) {
   .containerItems {
     grid-template-columns: repeat(1, 3fr); } }
 
