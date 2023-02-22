@@ -134,7 +134,7 @@ body {
 .informacionCompra {
   width: 500px;
   height: 500px;
-  background-color: #ff5a41;
+  background-color: grey;
   border-radius: 25px;
   display: flex;
   align-items: flex-start;
@@ -292,8 +292,6 @@ img {
   /* background-color: wheat;*/ }
 
 @media screen and (max-width: 768px) {
-  .containerItems {
-    grid-template-columns: repeat(3, 1fr); }
   #carouselExampleIndicators {
     background-image: none; }
   .carousel-control-prev, .carousel-control-next {
@@ -309,8 +307,6 @@ img {
     margin: 25px; } }
 
 @media screen and (max-width: 400px) {
-  .containerItems {
-    grid-template-columns: repeat(1, 3fr); }
   .carousel-control-prev, .carousel-control-next {
     top: 50px; }
   .carousel-indicators {
@@ -321,6 +317,26 @@ img {
     height: 230px; }
   .carousel-item {
     height: 2; } }
+
+@media screen and (max-width: 1300px) {
+  .containerItems {
+    grid-template-columns: repeat(5, 1fr); } }
+
+@media screen and (max-width: 1000px) {
+  .containerItems {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (max-width: 850px) {
+  .containerItems {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 700px) {
+  .containerItems {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 440px) {
+  .containerItems {
+    grid-template-columns: repeat(1, 3fr); } }
 
 h2 {
   font-weight: normal; }
@@ -352,7 +368,8 @@ h2 {
   border-color: orangered;
   color: #ff2301; }
   .info button:hover {
-    background-color: #263143; }
+    background-color: #ff5a41;
+    color: black; }
 
 /*wpp icon*/
 /*.wpp{

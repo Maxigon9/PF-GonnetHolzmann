@@ -10,7 +10,7 @@ const body = document.querySelector("body");
 const x = document.getElementById('x');
 const carouselExampleIndicators = document.querySelector("#carouselExampleIndicators");
 const contenedor = document.getElementById('contenedor');
-
+const containerItems2 = document.querySelector("#containerItems2");
 
 // Variables que vamos a usar en nuestoro proyecto
 let lista = []
@@ -20,7 +20,16 @@ window.addEventListener("scroll", function(){
     if(carouselExampleIndicators.getBoundingClientRect().top<10){
         header.classList.add("scroll")
     }
+    else{
+        header.classList.remove("scroll")
+    }
+})
 
+window.addEventListener("scroll", function(){
+
+    if(containerItems2.getBoundingClientRect().top<10){
+        header.classList.add("scroll")
+    }
     else{
         header.classList.remove("scroll")
     }

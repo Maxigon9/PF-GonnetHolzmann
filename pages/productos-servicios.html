@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-dark navbar-fixed-top p-0">
+        <nav class="navbar navbar-expand-lg bg-body-dark navbar-fixed-top p-0" id="header">
             <div class="container-fluid">
               <a class="navbar-brand" href="../index.html"> <img src="../img/logofox.webp" alt="Logo Horus Tech Store"> </a>
               <button class="navbar-toggler navbar-dark" type="1" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,16 +51,20 @@
                     <a class="nav-link" href="contacto.html">Contacto</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                    <!--<form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    <div class="cesta">
+                        <img id="cart__icon" class="cart__icon" src="../img/carrito-de-compras.png" alt="carrito compras"></img>
+                        <div id="numero"></div>
+                    </div>
               </div>
             </div>
           </nav>
         </header>
 
-    <div class="containerItems2">
+    <div class="containerItems2" id="containerItems2">
         <div class="item">
             <figure>
                 <img src="../img/products/notebook.png" alt="">
@@ -201,5 +205,7 @@
             <small>& copy; 2023 <b>Horus Tech Store</b> - Todos los derechos Reservados.</small>
         </div>
     </footer>
+
+    <script src="../js/app.js"></script> 
 </body>
 </html>
