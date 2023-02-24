@@ -418,14 +418,26 @@ img {
   .typing-demo {
     font-size: 20px; } }
 
+@media screen and (max-width: 490px) {
+  .typing-demo {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+    font-size: 30px; } }
+
 @media screen and (max-width: 415px) {
   .containerItems {
     grid-template-columns: repeat(1, 3fr); }
   .typing-demo {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
     font-size: 30px; } }
 
-.typing-demo {
-  word-wrap: break-word; }
+.wrapper {
+  width: 100%; }
+  .wrapper .typing-demo {
+    word-wrap: break-word; }
 
 h2 {
   font-weight: normal; }
