@@ -75,10 +75,18 @@
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form> -->
+                 <div class="user__actions">
+                    <div class="busqueda">
+                        <img id="busqueda__icon" class="busqueda__icon" src="img/busqueda.png" alt="buscador"></img>
+                    </div>
+                    <div class="busqueda">
+                        <img id="login__icon" class="login__icon" src="img/user.png" alt="login"></img>
+                    </div>
                     <div class="cesta">
                         <img id="cart__icon" class="cart__icon" src="img/carrito-de-compras.png" alt="carrito compras"></img>
                         <div id="numero"></div>
                     </div>
+                  </div>
                 </div>
                 </div>
             </div>
@@ -117,6 +125,10 @@
         </button>
     </div>
 
+<button class="fa-solid fa-circle-arrow-up" onclick="topFunction()"  id="myBtn" title="Go to top"></button>
+
+<a href="https://wa.me/+542923569248" class="fa-brands fa-whatsapp" id="wpp__icon"></a>
+
 
     <main>
         <div id="contenedor" class="contenedor"> </div>
@@ -124,14 +136,22 @@
     
     <div id="contenedorCompra">
         <div class="informacionCompra" id="informacionCompra">
-            <h2>Cesta</h2>
+            <h2>Carrito</h2>
             <p class="x" id="x">x</p>
         </div>
 
         <div class="productosCompra" id="productosCompra"></div>
         <div class="total" id="total"></div>
-        <button>Finalizar Compra</button>
+        <button>Finalizar compra</button>
     </div>
+
+    <div class="wrapper">
+        <div class="typing-demo">
+            DESTACADOS DEL DIA EN HORUS TECH STORE
+        </div>
+    </div>
+
+    <!--<h1 typing-demo>DESTACADOS DEL DIA EN HORUS TECH STORE</h1>-->
 
     <div class="containerItems" id="containerItems">
         <div class="item">
@@ -244,6 +264,13 @@
             </div>
         </div>
     </div>
+
+
+        <div class="vermasBoton">
+            <a href="/pages/productos-servicios.html">
+            <button>Ver mas</button>
+        </a>
+        </div>
 
     <footer class="pie">
         <div class="group-1">

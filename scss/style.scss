@@ -65,11 +65,10 @@ img{
 }
 
 .info{
-    padding: 15px 30px 15px 30px;
+    padding: 5px 30px 15px 30px;
     line-height: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     color: #fff;
     align-items: center;
    /* background-color: wheat;*/
@@ -120,29 +119,60 @@ img{
     } 
     }  
 
+    @media screen and (max-width:2000px){
+        .containerItems{
+            grid-template-columns: repeat(5, 1fr);   
+        } 
+        .typing-demo{
+            font-size: 50px;
+    }
+        }  
+
+        @media screen and (max-width:1060px){
+            .typing-demo{
+                font-size: 40px;
+        }
+            }  
+    
+
     @media screen and (max-width:1000px){
         .containerItems{
             grid-template-columns: repeat(4, 1fr);   
         } 
+        .typing-demo{
+                font-size: 40px;
+        }
         }  
 
         @media screen and (max-width:850px){
             .containerItems{
                 grid-template-columns: repeat(3, 1fr);   
             } 
+            .typing-demo{
+                font-size: 30px;
+            }
             }  
 
             @media screen and (max-width:700px){
                 .containerItems{
                     grid-template-columns: repeat(2, 1fr);   
                 } 
+                .typing-demo{
+                    font-size: 20px;
+                }
                 }  
 
                 @media screen and (max-width:415px){
                     .containerItems{
                         grid-template-columns: repeat(1, 3fr);   
                     } 
+                    .typing-demo{
+                        font-size: 30px;
+                    }
                     }  
+.typing-demo{
+    word-wrap: break-word;
+}
 
 h2{
     font-weight: normal;
@@ -163,6 +193,7 @@ h2{
 
 .item figure{
     overflow: hidden;
+
 }
 
 .price{
@@ -260,6 +291,11 @@ section{
    margin-bottom: 3%;
    padding-left: 25px;
    padding-right: 25px;
+   p{
+    font-size: 1rem;
+    color: #efefef;
+}
+
 }
 
 .sobrenosotros__text{
@@ -267,12 +303,14 @@ section{
     margin-bottom: 3%;
     padding-left: 25px;
     padding-right: 25px;
+    line-height: 2;
+    p{
+        font-size: 1rem;
+        color: #efefef;
+    }
 }
 
-p{
-    font-size: 1rem;
-    color: #efefef;
-}
+
 
 .container__form {
     position: relative;
@@ -298,3 +336,111 @@ p{
       justify-content: center;
       overflow: hidden; 
     }
+
+    h1{
+        position: relative;
+       bottom: 10px;
+        font-size: 40px;
+        color: #efefef;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .vermasBoton{
+        margin: 0 auto;
+        padding-bottom: 50px;
+
+        button{
+            background: none;
+            padding: 15px 10px;
+            cursor: pointer;
+            border: 2px solid ;
+            border-color: orangered;
+            color: #ff2301;
+            border-radius: 30%;
+
+    &:hover{
+        background-color: #ff5a41;
+        color: black;
+            
+        }
+
+    }
+}
+
+
+
+.wrapper {
+    height: 15vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 38ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ff5a41;
+    position: relative;
+    bottom: 10px;
+     margin: 0 auto;
+     max-width: 100%;
+     margin-bottom: 3%;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: aqua; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 32px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: aqua; /* Add a dark-grey background on hover */
+    color: #fff;
+  }
+
+  #wpp__icon {
+    display: flex; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 90px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: aqua; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 35px; /* Increase font size */
+  }
+  
+  #wpp__icon:hover {
+    background-color: aqua; /* Add a dark-grey background on hover */
+    color: #fff;
+  }

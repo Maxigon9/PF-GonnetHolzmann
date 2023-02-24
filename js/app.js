@@ -11,6 +11,9 @@ const x = document.getElementById('x');
 const carouselExampleIndicators = document.querySelector("#carouselExampleIndicators");
 const contenedor = document.getElementById('contenedor');
 const containerItems2 = document.querySelector("#containerItems2");
+const container__form = document.querySelector("#container__form");
+const comoComprar = document.querySelector("#comoComprar");
+const sobrenosotros__text = document.querySelector("#sobrenosotros__text");
 
 // Variables que vamos a usar en nuestoro proyecto
 let lista = []
@@ -35,6 +38,36 @@ window.addEventListener("scroll", function(){
     }
 })
 
+window.addEventListener("scroll", function(){
+
+    if(container__form.getBoundingClientRect().top<10){
+        header.classList.add("scroll")
+    }
+    else{
+        header.classList.remove("scroll")
+    }
+})
+
+
+window.addEventListener("scroll", function(){
+
+    if(comoComprar.getBoundingClientRect().top<10){
+        header.classList.add("scroll")
+    }
+    else{
+        header.classList.remove("scroll")
+    }
+})
+
+window.addEventListener("scroll", function(){
+
+    if(sobrenosotros__text.getBoundingClientRect().top<15){
+        header.classList.add("scroll")
+    }
+    else{
+        header.classList.remove("scroll")
+    }
+})
 
 // Funciones para almacenar y traer los datos que se almacenan
 function guardarAlmacenamientoLocal(llave, valor_a_guardar) {
@@ -130,3 +163,26 @@ x.addEventListener("click", function(){
     contenedorCompra.classList.add('none')
     contenedorCompra.classList.remove('contenedorCompra')
     informacionCompra.classList.remove('informacionCompra')})
+
+
+
+
+    // Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
