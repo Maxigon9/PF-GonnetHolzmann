@@ -74,117 +74,6 @@ img{
    /* background-color: wheat;*/
 }
 
-@media screen and (max-width:768px){
-#carouselExampleIndicators{
-    background-image: none;
-}
-.carousel-control-prev, .carousel-control-next{
- top: calc(50% - 250px);
-}
-.logo{
-    border-radius: 50%;
-    width: 100px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-}
-.red{
-    margin: 25px;
-    
-}
-}
-
-@media screen and (max-width:400px){
-    .carousel-control-prev, .carousel-control-next{
-        top: 50px;
-       }
-    .carousel-indicators{
-        bottom: -15px;
-    }
-    .carousel{
-        margin-bottom: 0;
-        padding-bottom: 0;
-        height: 230px;
-    }
-    .carousel-item{
-        height: 2;
-    }
-    }
-
-
-    @media screen and (max-width:1300px){
-    .containerItems{
-        grid-template-columns: repeat(5, 1fr);   
-    } 
-    }  
-
-    @media screen and (max-width:2000px){
-        .containerItems{
-            grid-template-columns: repeat(5, 1fr);   
-        } 
-        .typing-demo{
-            font-size: 50px;
-    }
-        }  
-
-        @media screen and (max-width:1060px){
-            .typing-demo{
-                font-size: 40px;
-        }
-            }  
-    
-
-    @media screen and (max-width:1000px){
-        .containerItems{
-            grid-template-columns: repeat(4, 1fr);   
-        } 
-        .typing-demo{
-                font-size: 40px;
-        }
-        }  
-
-        @media screen and (max-width:850px){
-            .containerItems{
-                grid-template-columns: repeat(3, 1fr);   
-            } 
-            .typing-demo{
-                font-size: 30px;
-            }
-            }  
-
-            @media screen and (max-width:700px){
-                .containerItems{
-                    grid-template-columns: repeat(2, 1fr);   
-                } 
-                .typing-demo{
-                    font-size: 20px;
-                }
-                }
-                
-                @media screen and (max-width:490px){
-                 
-                    .typing-demo{
-                        width: 100%;
-                        text-align: center;
-                        white-space: normal;
-                        font-size: 30px;
-                    }
-        
-                }  
-
-                @media screen and (max-width:415px){
-                    .containerItems{
-                        grid-template-columns: repeat(1, 3fr);   
-                    } 
-                    .typing-demo{
-                        width: 100%;
-                        text-align: center;
-                        white-space: normal;
-                        font-size: 30px;
-                    }
-        
-                }  
 
 
 .wrapper{
@@ -464,3 +353,119 @@ section{
     background-color: aqua; /* Add a dark-grey background on hover */
     color: #fff;
   }
+
+  @media screen and (max-width:768px){
+    #carouselExampleIndicators{
+        background-image: none;
+    }
+    .carousel-control-prev, .carousel-control-next{
+     top: calc(50% - 250px);
+    }
+    .logo{
+        border-radius: 50%;
+        width: 100px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    .red{
+        margin: 25px;
+        
+    }
+    }
+    
+    @media screen and (max-width:400px){
+        .carousel-control-prev, .carousel-control-next{
+            top: 50px;
+           }
+        .carousel-indicators{
+            bottom: -15px;
+        }
+        .carousel{
+            margin-bottom: 0;
+            padding-bottom: 0;
+            height: 230px;
+        }
+        .carousel-item{
+            height: 2;
+        }
+        }
+    
+    
+        @media screen and (max-width:1300px){
+        .containerItems{
+            grid-template-columns: repeat(5, 1fr);   
+        } 
+        }  
+    
+        @media screen and (max-width:2000px){
+            .containerItems{
+                grid-template-columns: repeat(5, 1fr);   
+            } 
+            .typing-demo{
+                font-size: 50px;
+        }
+            }  
+    
+            @media screen and (max-width:1060px){
+                .typing-demo{
+                    font-size: 40px;
+            }
+                }  
+        
+    
+        @media screen and (max-width:1000px){
+            .containerItems{
+                grid-template-columns: repeat(4, 1fr);   
+            } 
+            .typing-demo{
+                    font-size: 40px;
+            }
+            }  
+    
+            @media screen and (max-width:850px){
+                .containerItems{
+                    grid-template-columns: repeat(3, 1fr);   
+                } 
+                .typing-demo{
+                    font-size: 30px;
+                }
+                }  
+    
+                @media screen and (max-width:700px){
+                    .containerItems{
+                        grid-template-columns: repeat(2, 1fr);   
+                    } 
+                    .typing-demo{
+                        font-size: 40px;
+                        text-align: center;
+                        white-space: normal;
+                        font-size: 30px;
+                    }
+                    }
+                    
+                    @media screen and (max-width:490px){
+                     
+                        .typing-demo{
+                            width: 100%;
+                            text-align: center;
+                            white-space: normal;
+                            font-size: 30px;
+                        }
+            
+                    }  
+    
+                    @media screen and (max-width:415px){
+                        .containerItems{
+                            grid-template-columns: repeat(1, 3fr);   
+                        } 
+                        .typing-demo{
+                            width: 100%;
+                            text-align: center;
+                            white-space: normal;
+                            font-size: 30px;
+                        }
+            
+                    }  
+    
