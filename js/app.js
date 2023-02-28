@@ -11,7 +11,7 @@ const x = document.getElementById('x');
 const carouselExampleIndicators = document.querySelector("#carouselExampleIndicators");
 const contenedor = document.getElementById('contenedor');
 const containerItems2 = document.querySelector("#containerItems2");
-const container__form = document.querySelector("#container__form");
+const myForm = document.querySelector("#myForm");
 const comoComprar = document.querySelector("#comoComprar");
 const sobrenosotros__text = document.querySelector("#sobrenosotros__text");
 
@@ -40,7 +40,7 @@ window.addEventListener("scroll", function(){
 
 window.addEventListener("scroll", function(){
 
-    if(container__form.getBoundingClientRect().top<10){
+    if(myForm.getBoundingClientRect().top<10){
         header.classList.add("scroll")
     }
     else{
@@ -165,8 +165,6 @@ x.addEventListener("click", function(){
     informacionCompra.classList.remove('informacionCompra')})
 
 
-
-
     // Get the button:
 let mybutton = document.getElementById("myBtn");
 
@@ -174,7 +172,7 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -186,3 +184,13 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const checkbox = document.querySelector('.myForm input[type="checkbox"]');
+const btns = document.querySelectorAll(".myForm button");
+
+checkbox.addEventListener("change", function() {
+  const checked = this.checked;
+  for (const btn of btns) {
+    checked ? (btn.disabled = false) : (btn.disabled = true);
+  }
+});

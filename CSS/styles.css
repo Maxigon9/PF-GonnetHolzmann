@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'roboto', sans-serif; }
+  box-sizing: border-box; }
 
 body {
   /*background-color: black;*/
@@ -18,7 +17,7 @@ body {
   filter: drop-shadow(2px 4px 8px #585858); }
 
 .nav-item {
-  color: #ff2301; }
+  font-weight: bold; }
   .nav-item:hover {
     color: #ff2301; }
 
@@ -39,12 +38,10 @@ a.nav-link.dropdown-toggle.show {
     display: inline-block;
     margin: 0 10px;
     position: relative;
-    font-family: 'Roboto', sans-serif;
     color: #ff2301; }
   .navbar a {
     text-decoration: none;
     color: #ff5a41;
-    font-family: sans-serif;
     font-size: 1.2rem; }
     .navbar a:hover {
       color: #ff2301; }
@@ -311,6 +308,25 @@ a.nav-link.dropdown-toggle.show {
   justify-content: center;
   align-items: center; }
 
+.h1 {
+  font-family: 'Poppins', sans-serif; }
+
+.h2 {
+  font-family: 'Poppins', sans-serif; }
+
+.h3 {
+  font-family: 'Poppins', sans-serif; }
+
+.header {
+  font-family: 'Montserrat', sans-serif; }
+
+.navbar a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold; }
+
+.p {
+  font-family: 'Titillium Web', sans-serif; }
+
 #carouselExampleIndicators {
   margin-top: 5%;
   background-image: linear-gradient(#f47521, #fab818); }
@@ -345,8 +361,7 @@ img {
 .item {
   border-radius: 15px;
   border-width: 1px;
-  border-style: solid;
-  border-color: #ff2301; }
+  border-style: solid; }
   .item:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
 
@@ -358,11 +373,6 @@ img {
   color: #fff;
   align-items: center;
   /* background-color: wheat;*/ }
-
-.wrapper {
-  width: 100%; }
-  .wrapper .typing-demo {
-    word-wrap: break-word; }
 
 h2 {
   font-weight: normal; }
@@ -379,7 +389,8 @@ h2 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
 
 .item figure {
-  overflow: hidden; }
+  overflow: hidden;
+  filter: drop-shadow(#fc3232 2px 4px 8px); }
 
 .price {
   font-size: 15px;
@@ -470,50 +481,18 @@ h2 {
 .containerItems2 {
   margin-top: 8%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   padding-left: 30px;
   padding-right: 50px;
   padding-bottom: 50px; }
 
-@media screen and (max-width: 768px) {
-  .containerItems2 {
-    margin-top: 5%;
-    grid-template-columns: repeat(2, 1fr); }
-  .navbar ul li {
-    flex-direction: column;
-    justify-content: center; }
-  .logo {
-    border-radius: 50%;
-    width: 100px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center; }
-  .comoComprar__questions {
-    padding-top: 75px; }
-  .sobrenosotros__text {
-    padding-top: 70px; } }
-
-@media screen and (max-width: 989px) {
-  .d-flex {
-    margin-bottom: 20px; } }
-
-@media screen and (max-width: 400px) {
-  .containerItems2 {
-    margin-top: 5%;
-    grid-template-columns: repeat(1, 1fr); }
-  .comoComprar__questions {
-    padding-top: 70px; }
-  .sobrenosotros__text {
-    padding-top: 70px; } }
-
 section {
   padding: 30px; }
 
 .comoComprar__questions {
-  margin-top: 8%;
-  margin-bottom: 3%;
+  margin-top: 60px;
+  margin-bottom: 15px;
   padding-left: 25px;
   padding-right: 25px; }
   .comoComprar__questions p {
@@ -521,8 +500,8 @@ section {
     color: #efefef; }
 
 .sobrenosotros__text {
-  margin-top: 8%;
-  margin-bottom: 3%;
+  margin-top: 60px;
+  margin-bottom: 15px;
   padding-left: 25px;
   padding-right: 25px;
   line-height: 2; }
@@ -530,12 +509,193 @@ section {
     font-size: 1rem;
     color: #efefef; }
 
+:root {
+  --white: #afafaf;
+  --red: #e31b23;
+  --bodyColor: #292a2b;
+  --borderFormEls: hsl(0, 0%, 10%);
+  --bgFormEls: hsl(0, 0%, 14%);
+  --bgFormElsFocus: hsl(0, 7%, 20%); }
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 100%; }
+
+button,
+label {
+  cursor: pointer;
+  color: white; }
+
+select {
+  appearance: none; }
+
+/* Remove native arrow on IE */
+select::-ms-expand {
+  display: none; }
+
+/*Remove dotted outline from selected option on Firefox*/
+/*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
+/*We use !important to override the color set for the select on line 99*/
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--white); }
+
+textarea {
+  resize: none; }
+
+.myForm {
+  margin: 0 auto;
+  margin-top: 85px; }
+
+.container {
+  filter: drop-shadow(#fc3232 2px 4px 8px);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 800px; }
+  .container ul {
+    list-style: none;
+    width: 500px; }
+  .container a {
+    color: inherit; }
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.myForm h1 {
+  margin-bottom: 1.5rem; }
+
+.myForm li,
+.myForm .grid > *:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
+.myForm select,
+.myForm input,
+.myForm textarea,
+.myForm button {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25); }
+
+.myForm textarea {
+  height: 170px; }
+
+.myForm ::placeholder {
+  color: inherit;
+  /*Fix opacity issue on Firefox*/
+  opacity: 1; }
+
+.myForm select:focus,
+.myForm input:focus,
+.myForm textarea:focus,
+.myForm button:enabled:hover,
+.myForm button:focus,
+.myForm input[type="checkbox"]:focus + label {
+  background: var(--bgFormElsFocus); }
+
+.myForm select:focus,
+.myForm input:focus,
+.myForm textarea:focus {
+  transform: scale(1.02); }
+
+.myForm *:required,
+.myForm select {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px; }
+
+.myForm *:required {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg); }
+
+.myForm select {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg); }
+
+.myForm *:disabled {
+  cursor: default;
+  filter: blur(2px); }
+
+/* FORM BTNS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.myForm .required-msg {
+  display: none;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg) no-repeat center left/15px 15px;
+  padding-left: 20px; }
+
+.myForm .btn-grid {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.2s; }
+
+.myForm button {
+  font-weight: bold; }
+
+.myForm button > * {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.4s ease-in-out; }
+
+.myForm button .back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-110%, -50%); }
+
+.myForm button:enabled:hover .back,
+.myForm button:focus .back {
+  transform: translate(-50%, -50%); }
+
+.myForm button:enabled:hover .front,
+.myForm button:focus .front {
+  transform: translateX(110%); }
+
+/* CUSTOM CHECKBOX
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.myForm input[type="checkbox"] {
+  position: absolute;
+  left: -9999px; }
+
+.myForm input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+  transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25); }
+
+.myForm input[type="checkbox"] + label::before,
+.myForm input[type="checkbox"] + label::after {
+  content: '';
+  position: absolute; }
+
+.myForm input[type="checkbox"] + label::before {
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--white); }
+
+.myForm input[type="checkbox"]:checked + label::before {
+  background: var(--red); }
+
+.myForm input[type="checkbox"]:checked + label::after {
+  left: 7px;
+  top: 7px;
+  width: 6px;
+  height: 14px;
+  border-bottom: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  transform: rotate(45deg); }
+
 .container__form {
   position: relative;
   top: 100px;
   margin: 0 auto;
   width: 100%;
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   max-width: 100%; }
 
@@ -547,7 +707,7 @@ section {
 .map {
   max-width: 100%;
   width: 100%;
-  margin-top: 190px;
+  margin-top: 10px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -583,17 +743,22 @@ h1 {
   display: grid;
   place-items: center; }
 
-.typing-demo {
-  width: 38ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  color: #ff5a41;
-  position: relative;
-  bottom: 10px;
-  margin: 0 auto;
-  max-width: 100%;
-  margin-bottom: 3%; }
+.wrapper {
+  width: 100%; }
+  .wrapper .typing-demo {
+    width: 19ch;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ff5a41;
+    position: relative;
+    bottom: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 3%;
+    word-wrap: break-word; }
+    .wrapper .typing-demo .p {
+      font-family: 'Titillium Web', sans-serif; }
 
 @keyframes typing {
   from {
@@ -674,6 +839,8 @@ h1 {
     background-image: none; }
   .carousel-control-prev, .carousel-control-next {
     top: calc(50% - 250px); }
+  .carousel-indicators {
+    bottom: -20px; }
   .logo {
     border-radius: 50%;
     width: 100px;
@@ -684,11 +851,23 @@ h1 {
   .red {
     margin: 25px; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   .carousel-control-prev, .carousel-control-next {
     top: 50px; }
   .carousel-indicators {
-    bottom: -15px; }
+    bottom: -85px; }
+  .carousel {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 230px; }
+  .carousel-item {
+    height: 2; } }
+
+@media screen and (max-width: 415px) {
+  .carousel-control-prev, .carousel-control-next {
+    top: 50px; }
+  .carousel-indicators {
+    bottom: -55px; }
   .carousel {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -704,7 +883,7 @@ h1 {
   .containerItems {
     grid-template-columns: repeat(5, 1fr); }
   .typing-demo {
-    font-size: 50px; } }
+    font-size: 65px; } }
 
 @media screen and (max-width: 1060px) {
   .typing-demo {
@@ -714,13 +893,13 @@ h1 {
   .containerItems {
     grid-template-columns: repeat(4, 1fr); }
   .typing-demo {
-    font-size: 40px; } }
+    font-size: 60px; } }
 
 @media screen and (max-width: 850px) {
   .containerItems {
     grid-template-columns: repeat(3, 1fr); }
   .typing-demo {
-    font-size: 30px; } }
+    font-size: 50px; } }
 
 @media screen and (max-width: 700px) {
   .containerItems {
@@ -745,4 +924,52 @@ h1 {
     width: 100%;
     text-align: center;
     white-space: normal;
-    font-size: 30px; } }
+    font-size: 35px; } }
+
+@media screen and (max-width: 3000px) {
+  .comoComprar__questions {
+    padding-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.5rem; }
+  .sobrenosotros__text {
+    padding-top: 25px; }
+  /*  .typing-demo{
+                            font-size: 150px;
+                         }*/ }
+
+/*@media screen and (max-width:3500px){
+                            .typing-demo{
+                                font-size: 150px;
+                             }
+                            }*/
+@media screen and (max-width: 768px) {
+  .containerItems2 {
+    margin-top: 5%;
+    grid-template-columns: repeat(2, 1fr); }
+  .navbar ul li {
+    flex-direction: column;
+    justify-content: center; }
+  .logo {
+    border-radius: 50%;
+    width: 100px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; }
+  .comoComprar__questions {
+    padding-top: 25px; }
+  .sobrenosotros__text {
+    padding-top: 25px; } }
+
+@media screen and (max-width: 989px) {
+  .d-flex {
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 400px) {
+  .containerItems2 {
+    margin-top: 5%;
+    grid-template-columns: repeat(1, 1fr); }
+  .comoComprar__questions {
+    padding-top: 15px; }
+  .sobrenosotros__text {
+    padding-top: 15px; } }
