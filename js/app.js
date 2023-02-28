@@ -40,7 +40,7 @@ window.addEventListener("scroll", function(){
 
 window.addEventListener("scroll", function(){
 
-    if(myForm.getBoundingClientRect().top<10){
+    if(myForm.getBoundingClientRect().top<1){
         header.classList.add("scroll")
     }
     else{
@@ -98,7 +98,7 @@ function visualizarProductos() {
     }
 }
 
-function comprar(indice) {
+/*function comprar(indice) {
     lista.push({ nombre: productos[indice].nombre, precio: productos[indice].valor })
 
     let van = true
@@ -117,7 +117,7 @@ function comprar(indice) {
     numero.innerHTML = lista.length
     numero.classList.add("diseñoNumero")
     return lista
-}
+}*/
 
 cart__icon.addEventListener("click", function(){
     body.style.overflow = "hidden"
@@ -137,7 +137,9 @@ function mostrarElemtrosLista() {
     total.innerHTML = `<p>Valor Total</p> <p><span>$${valortotal}</span></p>`
 }
 
-function eliminar(indice){
+
+
+/*function eliminar(indice){
     let van = true
     let i = 0
     while (van == true) {
@@ -156,7 +158,7 @@ function eliminar(indice){
     }
     visualizarProductos()
     mostrarElemtrosLista()
-}
+}*/
 
 x.addEventListener("click", function(){
     body.style.overflow = "auto"

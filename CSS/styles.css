@@ -39,7 +39,7 @@ a.nav-link.dropdown-toggle.show {
   .navbar a {
     text-decoration: none;
     color: #ff5a41;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold; }
     .navbar a:hover {
       color: #ff2301; }
@@ -196,25 +196,27 @@ a.nav-link.dropdown-toggle.show {
 .informacionCompra {
   width: 500px;
   height: 500px;
-  background-color: white;
+  background-color: black;
   border-radius: 25px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  position: fixed; }
+  position: fixed;
+  box-shadow: #fc3232 0px -1px 15px; }
   .informacionCompra h2 {
     display: flex;
     font-weight: 300;
     margin: 50px 0px 0px 50px;
     font-size: 32px;
-    width: 100%; }
+    width: 100%;
+    color: white; }
 
 .x {
   padding-top: 20px;
   padding-right: 30px;
   cursor: pointer;
   font-size: 30px;
-  color: black; }
+  color: white; }
 
 .productosCompra {
   font-size: 17px;
@@ -266,7 +268,7 @@ a.nav-link.dropdown-toggle.show {
   font-size: 27px;
   font-weight: 700; }
   .total p {
-    color: black; }
+    color: white; }
 
 .total span {
   font-weight: 300; }
@@ -282,8 +284,8 @@ a.nav-link.dropdown-toggle.show {
   font-weight: 300; }
 
 .contenedorCompra > button:hover {
-  background-color: black;
-  color: #ff5a41; }
+  background-color: #ff5a41;
+  color: black; }
 
 .none > div,
 .none button,
@@ -363,22 +365,23 @@ img {
     width: 100%;
     overflow: hidden;
     text-decoration: none;
-    margin-left: 11px; }
+    margin-left: 11px;
+    font-family: 'Poppins', sans-serif; }
 
 .item {
   width: 100%;
   margin: 0 auto;
   border-radius: 15px;
-  /* border-style: solid; */
   --bs-border-width: 0px;
-  box-shadow: #fc3232 0px -1px 11px;
+  box-shadow: #fc3232 0px -1px 15px;
   padding-bottom: 20px; }
   .item .price {
     margin-bottom: 0%;
     color: #f8f8f8;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 25px; }
+    margin-left: 25px;
+    font-family: 'Poppins', sans-serif; }
   .item .add-to-card {
     color: #ff5a41;
     border: 1px solid #ff5a41;
@@ -447,21 +450,11 @@ img {
 .view {
   height: 300px; }
 
-/*.info{
-    padding: 5px 30px 15px 30px;
-    line-height: 1;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    align-items: center;
-    
-    
-    //background-color: wheat;
-}*/
 .item img {
   width: 100%;
   object-fit: cover;
-  transition: all .5s; }
+  transition: all .5s;
+  height: 290px; }
 
 .item:hover img {
   transform: scale(1.2);
@@ -487,13 +480,6 @@ img {
     background-color: #ff5a41;
     color: black; }
 
-/*wpp icon*/
-/*.wpp{
-    width: 15%;
-    position: fixed;
-    background-color: aqua;
-}*/
-/*footer*/
 .pie {
   width: 100%;
   background-color: #ff5a41; }
@@ -558,13 +544,22 @@ img {
     padding: 35px 0px; } }
 
 .containerItems2 {
-  margin-top: 8%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  padding-left: 30px;
+  gap: 30px;
+  padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 50px; }
+  .containerItems2 a {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    margin-left: 11px;
+    font-family: 'Poppins', sans-serif; }
 
 section {
   padding: 30px; }
@@ -611,13 +606,9 @@ label {
 select {
   appearance: none; }
 
-/* Remove native arrow on IE */
 select::-ms-expand {
   display: none; }
 
-/*Remove dotted outline from selected option on Firefox*/
-/*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
-/*We use !important to override the color set for the select on line 99*/
 select:-moz-focusring {
   color: transparent !important;
   text-shadow: 0 0 0 var(--white); }
@@ -672,7 +663,6 @@ textarea {
 
 .myForm ::placeholder {
   color: inherit;
-  /*Fix opacity issue on Firefox*/
   opacity: 1; }
 
 .myForm select:focus,
@@ -704,7 +694,7 @@ textarea {
   cursor: default;
   filter: blur(2px); }
 
-/* FORM BTNS
+/*  BTNS
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .myForm .required-msg {
   display: none;
@@ -738,7 +728,7 @@ textarea {
 .myForm button:focus .front {
   transform: translateX(110%); }
 
-/* CUSTOM CHECKBOX
+/*  CHECKBOX
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .myForm input[type="checkbox"] {
   position: absolute;
@@ -813,7 +803,6 @@ h1 {
 
 .wrapper {
   height: 15vh;
-  /*This part is important for centering*/
   display: grid;
   place-items: center; }
 
@@ -909,24 +898,6 @@ h1 {
   /* Add a dark-grey background on hover */
   color: #fff; }
 
-/*.card-ecommerce .card-img-top {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-    //width: 100%;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-
-
-        &:hover {
-    transform: scale(1.2);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-   
-}
-
-  }*/
 @media screen and (max-width: 768px) {
   #carouselExampleIndicators {
     background-image: none; }
@@ -944,34 +915,31 @@ h1 {
   .red {
     margin: 25px; } }
 
-@media screen and (max-width: 415px) {
-  .carousel-control-prev, .carousel-control-next {
-    top: 50px; }
-  .carousel-indicators {
-    bottom: -55px; }
-  .carousel {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    height: 230px; }
-  .carousel-item {
-    height: 2; } }
-
-@media screen and (max-width: 1300px) {
-  .containerItems {
-    grid-template-columns: repeat(4, 1fr); } }
-
 @media screen and (max-width: 2000px) {
   .containerItems {
     grid-template-columns: repeat(5, 1fr); }
   .typing-demo {
-    font-size: 65px; } }
+    font-size: 65px; }
+  .containerItems2 {
+    margin-top: 50px;
+    grid-template-columns: repeat(5, 1fr); } }
 
 @media screen and (max-width: 1060px) {
   .typing-demo {
     font-size: 40px; } }
 
+@media screen and (max-width: 1300px) {
+  .containerItems {
+    grid-template-columns: repeat(4, 1fr); }
+  .containerItems2 {
+    margin-top: 50px;
+    grid-template-columns: repeat(4, 1fr); } }
+
 @media screen and (max-width: 1200px) {
   .containerItems {
+    grid-template-columns: repeat(3, 1fr); }
+  .containerItems2 {
+    margin-top: 50px;
     grid-template-columns: repeat(3, 1fr); }
   .typing-demo {
     font-size: 60px; } }
@@ -980,10 +948,16 @@ h1 {
   .containerItems {
     grid-template-columns: repeat(2, 1fr); }
   .typing-demo {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .containerItems2 {
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 700px) {
   .containerItems {
+    grid-template-columns: repeat(2, 1fr); }
+  .containerItems2 {
+    margin-top: 50px;
     grid-template-columns: repeat(2, 1fr); }
   .typing-demo {
     font-size: 40px;
@@ -997,13 +971,6 @@ h1 {
     text-align: center;
     white-space: normal;
     font-size: 30px; } }
-
-@media screen and (max-width: 415px) {
-  .typing-demo {
-    width: 100%;
-    text-align: center;
-    white-space: normal;
-    font-size: 35px; } }
 
 @media screen and (max-width: 3000px) {
   .comoComprar__questions {
@@ -1022,9 +989,6 @@ h1 {
                              }
                             }*/
 @media screen and (max-width: 768px) {
-  .containerItems2 {
-    margin-top: 5%;
-    grid-template-columns: repeat(2, 1fr); }
   .navbar ul li {
     flex-direction: column;
     justify-content: center; }
@@ -1045,15 +1009,15 @@ h1 {
     margin-bottom: 20px; } }
 
 @media screen and (max-width: 400px) {
-  .containerItems2 {
-    margin-top: 5%;
-    grid-template-columns: repeat(1, 1fr); }
   .comoComprar__questions {
     padding-top: 15px; }
   .sobrenosotros__text {
     padding-top: 15px; } }
 
 @media screen and (max-width: 550px) {
+  .containerItems2 {
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr); }
   .carousel-control-prev, .carousel-control-next {
     top: 50px; }
   .carousel-indicators {
@@ -1066,3 +1030,20 @@ h1 {
     height: 2; }
   .containerItems {
     grid-template-columns: repeat(1, 1fr); } }
+
+@media screen and (max-width: 415px) {
+  .carousel-control-prev, .carousel-control-next {
+    top: 50px; }
+  .carousel-indicators {
+    bottom: -55px; }
+  .carousel {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 230px; }
+  .carousel-item {
+    height: 2; }
+  .typing-demo {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+    font-size: 30px; } }

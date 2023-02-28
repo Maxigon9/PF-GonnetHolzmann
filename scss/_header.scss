@@ -42,7 +42,7 @@ a.nav-link.dropdown-toggle.show  {
         a{
             text-decoration: none;
             color: #ff5a41;
-            font-size: 16px;
+            font-size: 17px;
             font-weight: bold;
             &:hover{
                     color: $orange-fluo;
@@ -253,12 +253,14 @@ a.nav-link.dropdown-toggle.show  {
 .informacionCompra{
     width: 500px;
     height: 500px;
-    background-color: white;
+    background-color: black;
     border-radius: 25px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
+    box-shadow: rgb(252, 50, 50) 0px -1px 15px;
+
 
     h2{
         display: flex;
@@ -266,6 +268,7 @@ a.nav-link.dropdown-toggle.show  {
         margin: 50px 0px 0px 50px;
         font-size: 32px;
         width: 100%;
+        color: white;
     }
 }
 
@@ -275,7 +278,7 @@ a.nav-link.dropdown-toggle.show  {
     padding-right: 30px;
     cursor: pointer;
     font-size: 30px;
-    color: black;
+    color: white;
 }
 
 .productosCompra{
@@ -335,7 +338,7 @@ a.nav-link.dropdown-toggle.show  {
     font-weight: 700;
     
     p{
-        color: black;
+        color: white;
     }
 }
 
@@ -356,8 +359,8 @@ a.nav-link.dropdown-toggle.show  {
 }
 
 .contenedorCompra > button:hover{
-    background-color: black;
-    color: #ff5a41;
+    background-color: #ff5a41;
+    color: black;
 }
 
 .none>div,

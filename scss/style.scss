@@ -10,12 +10,11 @@ body{
   /*background-color: black;*/
 // background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
 /*background-image: linear-gradient(270deg,#1b1429,#140f23);*/
-background-color: black;
+   background-color: black;
    display: grid;
    min-height: 100vh;
    grid-template-rows: auto 1fr auto ;
 }
-
 
 
 @import "./header";
@@ -82,20 +81,16 @@ img{
       overflow: hidden;
       text-decoration: none;
       margin-left: 11px;
+      font-family: 'Poppins', sans-serif;
     }
 }
-
-
-
-
 
   .item {
     width: 100%;
     margin: 0 auto;
     border-radius: 15px;
-    /* border-style: solid; */
     --bs-border-width: 0px;
-    box-shadow: rgb(252, 50, 50) 0px -1px 11px;
+    box-shadow: rgb(252, 50, 50) 0px -1px 15px;
     padding-bottom: 20px;
 
     .price{
@@ -104,7 +99,8 @@ img{
       font-size: 18px;
       font-weight: 500;
       margin-left: 25px;
-    }
+      font-family: 'Poppins', sans-serif;
+        }
 
     .add-to-card {
       color: #ff5a41;
@@ -192,27 +188,13 @@ img{
 .view{
   height: 300px;
 }
-/*.info{
-    padding: 5px 30px 15px 30px;
-    line-height: 1;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    align-items: center;
-    
-    
-    //background-color: wheat;
-}*/
 
-
-
-
-
-    
+   
 .item img{
     width: 100%;
     object-fit: cover;
     transition: all .5s;
+    height: 290px;
 }
 
 .item:hover img{
@@ -235,11 +217,9 @@ img{
 
 .info button{
     background: none;
- // background-color: gray;
     padding: 15px 10px;
     cursor: pointer;
     border: 2px solid ;
-    //border-color: orangered;
     color: #ff2301;
 
     &:hover{
@@ -248,25 +228,27 @@ img{
     }
 }
 
-/*wpp icon*/
-/*.wpp{
-    width: 15%;
-    position: fixed;
-    background-color: aqua;
-}*/
-
-/*footer*/
 
 @import "./footer";
 
 .containerItems2{
-    margin-top: 8%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    padding-left: 30px; 
-    padding-right: 50px;
-    padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  padding-left: 50px; 
+  padding-right: 50px;
+  padding-bottom: 50px;
+  a{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    margin-left: 11px;
+    font-family: 'Poppins', sans-serif;
+  }
 }
 
 
@@ -330,14 +312,12 @@ section{
     appearance: none;
   }
   
-  /* Remove native arrow on IE */
+
   select::-ms-expand {
     display: none;
   }
   
-  /*Remove dotted outline from selected option on Firefox*/
-  /*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
-  /*We use !important to override the color set for the select on line 99*/
+
   select:-moz-focusring {
     color: transparent !important;
     text-shadow: 0 0 0 var(--white);
@@ -405,7 +385,6 @@ section{
   
   .myForm ::placeholder {
     color: inherit;
-    /*Fix opacity issue on Firefox*/
     opacity: 1;
   }
   .myForm select:focus,
@@ -444,7 +423,7 @@ section{
   }
   
   
-  /* FORM BTNS
+  /*  BTNS
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .myForm .required-msg {
     display: none;
@@ -487,7 +466,7 @@ section{
   }
   
   
-  /* CUSTOM CHECKBOX
+  /*  CHECKBOX
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .myForm input[type="checkbox"] {
     position: absolute;
@@ -581,7 +560,6 @@ section{
 
 .wrapper {
     height: 15vh;
-    /*This part is important for centering*/
     display: grid;
     place-items: center;
   }
@@ -666,37 +644,6 @@ section{
 
 
 
-  /*.card-ecommerce .card-img-top {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-    //width: 100%;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-
-
-        &:hover {
-    transform: scale(1.2);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-   
-}
-
-  }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
   @media screen and (max-width:768px){
     #carouselExampleIndicators{
         background-image: none;
@@ -721,32 +668,8 @@ section{
         margin: 25px;
         
     }
-    }
-    
-
-    @media screen and (max-width:415px){
-        .carousel-control-prev, .carousel-control-next{
-            top: 50px;
-           }
-        .carousel-indicators{
-            bottom: -55px;
-        }
-        .carousel{
-            margin-bottom: 0;
-            padding-bottom: 0;
-            height: 230px;
-        }
-        .carousel-item{
-            height: 2;
-        }
-        }
-    
-    
-        @media screen and (max-width:1300px){
-        .containerItems{
-            grid-template-columns: repeat(4, 1fr);   
-        } 
-        }  
+    }    
+     
     
         @media screen and (max-width:2000px){
             .containerItems{
@@ -755,6 +678,10 @@ section{
             .typing-demo{
                 font-size: 65px;
         }
+        .containerItems2{
+          margin-top: 50px;
+          grid-template-columns: repeat(5, 1fr);   
+      }
             }  
     
             @media screen and (max-width:1060px){
@@ -762,12 +689,24 @@ section{
                     font-size: 40px;
             }
                 }  
-        
+                @media screen and (max-width:1300px){
+                  .containerItems{
+                      grid-template-columns: repeat(4, 1fr);   
+                  } 
+                  .containerItems2{
+                    margin-top: 50px;
+                    grid-template-columns: repeat(4, 1fr);   
+                }
+                  } 
     
         @media screen and (max-width:1200px){
             .containerItems{
                 grid-template-columns: repeat(3, 1fr);   
             } 
+            .containerItems2{
+              margin-top: 50px;
+              grid-template-columns: repeat(3, 1fr);   
+          }
             .typing-demo{
                     font-size: 60px;
             }
@@ -780,12 +719,21 @@ section{
                 .typing-demo{
                     font-size: 50px;
                 }
+                .containerItems2{
+                  margin-top: 50px;
+                  grid-template-columns: repeat(2, 1fr);   
+              }
                 }  
     
                 @media screen and (max-width:700px){
                     .containerItems{
                         grid-template-columns: repeat(2, 1fr);   
                     } 
+
+                    .containerItems2{
+                      margin-top: 50px;
+                      grid-template-columns: repeat(2, 1fr);   
+                  }
                     .typing-demo{
                         font-size: 40px;
                         text-align: center;
@@ -805,17 +753,7 @@ section{
             
                     }  
     
-                    @media screen and (max-width:415px){
-                      
-                        .typing-demo{
-                            width: 100%;
-                            text-align: center;
-                            white-space: normal;
-                            font-size: 35px;
-                            
-                        }
-            
-                    }  
+                 
     
                     @media screen and (max-width:3000px){
                         .comoComprar__questions{
@@ -838,10 +776,7 @@ section{
                              }
                             }*/
                     @media screen and (max-width:768px){
-                        .containerItems2{
-                            margin-top: 5%;
-                            grid-template-columns: repeat(2, 1fr);   
-                        }
+                       
                         .navbar ul li{
                             flex-direction: column;  
                             justify-content: center;
@@ -870,10 +805,7 @@ section{
                         
                         
                         @media screen and (max-width:400px){
-                            .containerItems2{
-                                margin-top: 5%;
-                                grid-template-columns: repeat(1, 1fr);   
-                            }
+                           
                             .comoComprar__questions{
                                    padding-top: 15px;
                                    
@@ -884,6 +816,11 @@ section{
                              }    
                 
                              @media screen and (max-width:550px){
+
+                              .containerItems2{
+                                margin-top:  50px;;
+                                grid-template-columns: repeat(1, 1fr);   
+                            }
                               .carousel-control-prev, .carousel-control-next{
                                   top: 50px;
                                  }
@@ -906,3 +843,28 @@ section{
                              
 
     
+                              @media screen and (max-width:415px){
+                                .carousel-control-prev, .carousel-control-next{
+                                    top: 50px;
+                                   }
+                                .carousel-indicators{
+                                    bottom: -55px;
+                                }
+                                .carousel{
+                                    margin-bottom: 0;
+                                    padding-bottom: 0;
+                                    height: 230px;
+                                }
+                                .carousel-item{
+                                    height: 2;
+                                }
+
+                                .typing-demo{
+                                  width: 100%;
+                                  text-align: center;
+                                  white-space: normal;
+                                  font-size: 30px;
+                                  
+                              }
+                                }
+                            
